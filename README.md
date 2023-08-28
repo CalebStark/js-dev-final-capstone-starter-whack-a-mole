@@ -42,7 +42,7 @@ Each of the user stories is listed below. The user stories are to be implemented
 
 The game needs to have the basic structure for it to function. The game will need a name, some basic board controls such as a start button, a score, and a timer display. The game needs nine holes and moles defined.
 
-#### 1. Add a title to the game, surrounded by `h1` tags.
+<!-- #### 1. Add a title to the game, surrounded by `h1` tags.
 
 You need to name your game. The default is `whack-a-mole`, but you can choose another name depending on the theme that you want to set for the game. Some variations could be `whack-a-virus`, `catch-a-cat`, or something else. Surround your title in `h1` tags. Besides naming your game, you will also need to assign an `id` attribute to the `h1` tag and set the `id` attribute's value to a string of `"title"` for the test to pass. It should look something like this:
 
@@ -64,7 +64,7 @@ The `index.html` file  has only two holes defined. The game should have up to ni
       </div>
       
       <!-- TODO: Add the missing holes and moles to the grid -->
-
+<!-- 
 ```
 
 #### 3. Define a `start` button in `index.html`
@@ -73,8 +73,8 @@ The game needs a `start` button so that a player can start playing the game. Use
 
 ```html
 <button id="start">start</button>
-```
-
+``` -->
+<!-- 
 #### 4. Use `querySelector()` or `querySelectorAll()` to access the elements in `index.js`
 
 Great! You have defined most of the HTML structure! Now you need to make sure that you can access the elements in JavaScript. Go to `src/index.js` and take some time to analyze the query selectors. You should see something like this:
@@ -90,14 +90,14 @@ const timerDisplay; // use querySelector() to get the timer element.
 
 Use `querySelector()` to get the missing `score` and `timer` elements.
 
-**Hint:** Review the _Selecting elements on the DOM_ lesson from the _JavaScript and the DOM_ module if you don't remember how to use query selectors. You can also consult the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
-
-#### Acceptance criteria
+**Hint:** Review the _Selecting elements on the DOM_ lesson from the _JavaScript and the DOM_ module if you don't remember how to use query selectors. You can also consult the [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). -->
+<!-- 
+#### Acceptance criteriaJ
 
 1. The title is surrounded by `h1` tags and has `title` set as `id`.
 1. Nine holes and moles are declared in the HTML file as `div` elements.
 1. A `start` button is defined in the HTML file.
-1. The missing query selectors for the score and timer were added in the `index.js` file.
+1. The missing query selectors for the score and timer were added in the `index.js` file. -->
 
 ## US-02 - Basic game functionality: Randomness
 
