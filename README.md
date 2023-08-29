@@ -239,7 +239,7 @@ _**Note:** This function is provided to you. You only need to uncomment the code
 4. The `gameOver()` function works as described in the pseudocode provided.
 5. The `startGame()` function works as expected.
  -->
-
+<!-- 
 ## US-04: Whack!
 
 The moles now show and hide, but nothing happens when a user clicks on them. In this user story, you are tasked to implement the functions that handle the clicking events and scoring.
@@ -275,8 +275,8 @@ This is an event handler that simply calls the `updateScore()` function to incre
 
 ```js
 function whack(event) {
-  // call updateScore();
-  // return points;
+//  call updateScore();
+//   return points;
 }
 ```
 **Hint:** Try to implement the solution by yourself and then look at the suggested function implementation in this [REPL](https://replit.com/@thinkful/addEventListeners#script.js). If you don't remember event handlers, you can review the _Event listeners_ lesson from the _JavaScript and the DOM_ module.
@@ -299,7 +299,7 @@ function setEventListeners(){
 1. The score points increment by 1, and the scoreboard is updated when `updateScore()` is called.
 2. The `clearScore()` function sets the points to 0, and the scoreboard is updated accordingly.
 3. `setEventListeners(moles)` adds a click event listener to each of the moles.
-4. `whack(event)` calls `updateScore()` when a player clicks on a mole. 
+4. `whack(event)` calls `updateScore()` when a player clicks on a mole.  -->
 
 ## US-05: Timer
 
