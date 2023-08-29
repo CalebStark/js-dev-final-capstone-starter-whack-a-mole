@@ -148,7 +148,7 @@ setDelay("hard") //> Returns 856 (returns a random number between 600 and 1200).
 2. The `setDelay()` function returns the correct values when a difficulty is set.
 3. The `chooseHole()` function returns a random hole as specified in the pseudocode above.
  -->
-
+<!-- 
 ## US-03 - Game flow
 
 In the previous user story, you implemented some of the basic functions necessary for the game to work correctly. Congrats! You are making good progress!
@@ -167,8 +167,8 @@ function toggleVisibility(hole){
 }
 ```
 
-**Hint:**  If you get stuck, study the  [classList MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and see how `classList.toggle()` is used in [ this REPL](https://replit.com/@thinkful/chooseHole#script.js).
-
+**Hint:**  If you get stuck, study the  [classList MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) and see how `classList.toggle()` is used in [ this REPL](https://replit.com/@thinkful/chooseHole#script.js). -->
+<!-- 
 #### 2. `showAndHide(hole)`
 
 The purpose of this function is to show and hide the mole given a delay time and the hole where the mole is hidden. You'll need to call the `toggleVisibility()` function that you just created. First, call the function so that it adds the `show` class. Then, inside the `setTimeout()`, the `toggleVisibility()` function will also need to be called so that it removes the `show` class. You will also need to set the delay that is given as a parameter. 
@@ -184,10 +184,10 @@ function showAndHide(hole, delay){
   }, 0); // TODO: Change the setTimeout() delay to the one provided as a parameter
   return timeoutID;
 }
-```
-
-**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here. Recall that `setTimeout()` is explained in the _JavaScript and the DOM: Events_ lesson. You can also consult the [`setTimeout()` MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout).
-
+``` -->
+<!-- 
+**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here. Recall that `setTimeout()` is explained in the _JavaScript and the DOM: Events_ lesson. You can also consult the [`setTimeout()` MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout). -->
+<!-- 
 #### 3. `showUp()`
 
 This function simply calls the `showAndHide()` function with a specific delay and hole. The function needs to call `setDelay()` and `chooseHole()` to call `showAndHide(hole, delay)`.
@@ -200,8 +200,8 @@ function showUp() {
 }
 ```
 
-**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here.
-
+**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here. -->
+<!-- 
 #### 4. `gameOver()`
 
 The purpose of this function is simply to determine if the game should continue or stop. The game continues if there is still time (`if(time > 0)`). If there is still time, then `showUp()` needs to be called again so that it sets a different delay and a different hole. If there is no more time, then it should call the `stopGame()` function. The function also needs to return the `timeoutId` if the game continues or the string `"game stopped"` if the game is over. You don't need to worry about the time right now. The time will be addressed in US-05.
@@ -216,8 +216,8 @@ function gameOver() {
   //   return gameStopped
 }
 ```
-**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here.
-
+**Hint:** Study [this REPL](https://replit.com/@thinkful/showAndHide#script.js) if you get stuck. The REPL has a very similar example that implements the mechanism that you want to implement here. -->
+<!-- 
 #### 5. `startGame()`
 
 This is the function that starts the game when the `start` button is clicked.
@@ -238,7 +238,7 @@ _**Note:** This function is provided to you. You only need to uncomment the code
 3. The `showUp()` function calls `setDelay()`  and `chooseHole()` to set a delay and hole used to call `showAndHide()`.
 4. The `gameOver()` function works as described in the pseudocode provided.
 5. The `startGame()` function works as expected.
-
+ -->
 
 ## US-04: Whack!
 
