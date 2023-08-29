@@ -300,7 +300,7 @@ function setEventListeners(){
 2. The `clearScore()` function sets the points to 0, and the scoreboard is updated accordingly.
 3. `setEventListeners(moles)` adds a click event listener to each of the moles.
 4. `whack(event)` calls `updateScore()` when a player clicks on a mole.  -->
-
+<!-- 
 ## US-05: Timer
 
 The game needs a timer that informs the player how many seconds they have left. You'll need to use `setInterval()` to create a timer. If you need to, go back and review the `setInterval()` function in the _JavaScript and the DOM: Events_ lesson.  You may also use the functions provided in [this REPL](https://replit.com/@thinkful/timer#script.js).
@@ -336,7 +336,7 @@ _**Note:** This is the same function that's provided in  [this REPL](https://rep
 #### Acceptance criteria
 
 1. `startTimer()` and `updateTimer()` work as expected.
-2. The timer displays in the game.
+2. The timer displays in the game. -->
 
 
 ## US-06: Originality
