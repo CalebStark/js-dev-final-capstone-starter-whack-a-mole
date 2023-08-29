@@ -98,7 +98,7 @@ Use `querySelector()` to get the missing `score` and `timer` elements.
 1. Nine holes and moles are declared in the HTML file as `div` elements.
 1. A `start` button is defined in the HTML file.
 1. The missing query selectors for the score and timer were added in the `index.js` file. -->
-
+<!-- 
 ## US-02 - Basic game functionality: Randomness
 
 Good job! You have the HTML of your game all set up. Now, it's time to implement some of the game functionality in JavaScript. The moles (or other chosen entity) need to appear and disappear randomly.
@@ -138,16 +138,16 @@ setDelay("hard") //> Returns 856 (returns a random number between 600 and 1200).
    // 3. if hole === lastHole, then call chooseHole(holes) again because you don't want to return the same hole.
    // 4. if hole is not the same as the lastHole, then keep track of it (lastHole = hole) and return the hole.
  }
- ```
+ ``` -->
+<!-- 
+**Hint:**  If you get stuck, study [this REPL](https://replit.com/@thinkful/chooseHole#script.js). -->
 
-**Hint:**  If you get stuck, study [this REPL](https://replit.com/@thinkful/chooseHole#script.js).
-
-#### Acceptance criteria
+<!-- #### Acceptance criteria
 
 1. The `randomInteger()` function works as expected.
 2. The `setDelay()` function returns the correct values when a difficulty is set.
 3. The `chooseHole()` function returns a random hole as specified in the pseudocode above.
-
+ -->
 
 ## US-03 - Game flow
 
