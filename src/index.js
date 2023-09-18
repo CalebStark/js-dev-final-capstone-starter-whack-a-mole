@@ -3,8 +3,8 @@ const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
-const song = new Audio("../assets/Komiku_-_70_-_Ending(chosic.com).mp3");
-const bark = new Audio("../assets/dog_barking.mp3");
+const song = new Audio("./assets/Komiku_-_70_-_Ending(chosic.com).mp3");
+const bark = new Audio("./assets/dog_barking.mp3");
 
 let time = 0;
 let timer;
