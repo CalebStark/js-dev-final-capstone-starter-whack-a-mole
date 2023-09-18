@@ -51,7 +51,6 @@ body #infomation{
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  /*cursor: url('./assets/mallet.png'), pointer;*/
 }
 
 .hole {
@@ -75,8 +74,8 @@ body #infomation{
 }
 
 .mole {
-  /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
+  background:url('../assets/DogPhoto.png') bottom center no-repeat;
+  /* background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat; */
   background-size: 40%;
   position: absolute;
   top: 100%;

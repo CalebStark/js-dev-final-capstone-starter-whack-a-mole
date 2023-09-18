@@ -3,6 +3,8 @@ const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
+const song = new Audio("../assets/Komiku_-_70_-_Ending(chosic.com).mp3");
+const bark = new Audio("../assets/dog_barking.mp3");
 
 let time = 0;
 let timer;
@@ -213,6 +215,7 @@ function startTimer() {
 */
 function whack(event) {
   // TODO: Write your code here.
+  bark.play();
   updateScore();
   return points;
 }
@@ -245,10 +248,11 @@ function setDuration(duration) {
 *
 * This function is called when the game is stopped. It clears the
 * timer using clearInterval. Returns "game stopped".
+* This funciton will also pause the music
 *
 */
 function stopGame(){
-  // stopAudio(song);  //optional
+  song.pause();
   clearInterval(timer);
   return "game stopped";
 }
@@ -259,7 +263,12 @@ function stopGame(){
 * is clicked.
 *
 */
+
+
+
+
 function startGame(){
+  song.play();
   setDuration(10);
   showUp();
   setEventListeners();
