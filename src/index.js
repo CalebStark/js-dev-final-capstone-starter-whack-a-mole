@@ -1,11 +1,8 @@
-browser.opaqueResponseBlocking.javascriptValidator;
 const holes = document.querySelectorAll('.hole');
 const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
-const song = new Audio("https://github.com/CalebStark/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/Komiku_-_70_-_Ending(chosic.com).mp3");
-const bark = new Audio("https://github.com/CalebStark/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/dog_barking.mp3");
 
 let time = 0;
 let timer;
@@ -216,7 +213,6 @@ function startTimer() {
 */
 function whack(event) {
   // TODO: Write your code here.
-  bark.play();
   updateScore();
   return points;
 }
@@ -269,7 +265,6 @@ function stopGame(){
 
 
 function startGame(){
-  song.play();
   setDuration(10);
   showUp();
   setEventListeners();
@@ -279,7 +274,6 @@ function startGame(){
 }
 
 startButton.addEventListener("click", startGame);
-
 
 // Please do not modify the code below.
 // Used for testing purposes.
