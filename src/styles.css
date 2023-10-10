@@ -34,6 +34,22 @@ body #infomation{
   margin: 5px;
 }
 
+#difficulty{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border-color: brown;
+  text-align: center;
+  font-size: 30px;
+}
+
+#difficulty button{
+  margin: 10px;
+}
 
 #start {
     width: 90px;

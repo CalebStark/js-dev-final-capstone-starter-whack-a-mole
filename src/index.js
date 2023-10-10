@@ -3,6 +3,9 @@ const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
+const easyDifficulty = document.querySelector("#easy");
+const mediumDifficulty = document.querySelector("#medium");
+const hardDifficulty = document.querySelector("#hard");
 const dogCatch = new Audio('https://github.com/CalebStark/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/assets_dog_barking.mp3?raw=true');
 const song = new Audio("https://github.com/CalebStark/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/molesong.mp3?raw=true");
 
@@ -10,8 +13,28 @@ let time = 0;
 let timer;
 let lastHole = 0;
 let points = 0;
-let difficulty = "hard";
+let difficulty = "normal";
 
+// Selecting the difficulty
+function setDifficulty(selectedDifficulty) {
+  difficulty = selectedDifficulty;
+}
+
+function difficultyEventListener() {
+  easyDifficulty.addEventListener("click", function () {
+    setDifficulty("easy");
+  });
+
+  mediumDifficulty.addEventListener("click", function () {
+    setDifficulty("normal");
+  });
+
+  hardDifficulty.addEventListener("click", function () {
+    setDifficulty("hard");
+  });
+}
+
+difficultyEventListener();
 
 // Setting up song to play along with the game and the funcitons to allow it to work.
 
