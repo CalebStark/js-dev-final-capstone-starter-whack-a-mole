@@ -3,12 +3,22 @@ const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
+const dogCatch = new Audio('../assets/assets_dog_barking.mp3')
+const song = new Audio("../assets/molesong.mp3")
 
 let time = 0;
 let timer;
 let lastHole = 0;
 let points = 0;
 let difficulty = "hard";
+
+
+// Setting up song to play along with the game and the funcitons to allow it to work.
+
+function playSong(audioObject){
+  audioObject.loop = true;
+  audioObject.play();
+}
 
 /**
  * Generates a random integer within a range.
@@ -214,6 +224,7 @@ function startTimer() {
 function whack(event) {
   // TODO: Write your code here.
   updateScore();
+  dogCatch.play();
   return points;
 }
 
@@ -265,6 +276,7 @@ function stopGame(){
 
 
 function startGame(){
+  playSong(song);
   setDuration(10);
   showUp();
   setEventListeners();
