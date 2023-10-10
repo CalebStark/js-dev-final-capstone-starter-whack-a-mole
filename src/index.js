@@ -3,8 +3,8 @@ const moles = document.querySelectorAll('.mole');
 const startButton = document.querySelector('#start');
 const score = document.querySelector("#score");
 const timerDisplay = document.querySelector("#timer");
-const dogCatch = new Audio('../assets/assets_dog_barking.mp3');
-const song = new Audio("../assets/molesong.mp3");
+const dogCatch = new Audio('https://github.com/CalebStark/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/assets_dog_barking.mp3');
+const song = new Audio("https://github.com/CalebStark/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/molesong.mp3");
 
 let time = 0;
 let timer;
